@@ -516,10 +516,6 @@ small {
 /* MEDIUM SCREEN */
 
 @media (min-width: 1024px) and (max-width:1439px) {
-    html {
-        font-size: 32px;
-    }
-    
     header > div > p, section p,  section a {
         font-size: 1.5rem;
     }
@@ -719,10 +715,6 @@ small {
 /* LARGE SCREEN */
 
 @media (min-width: 1440px) {
-    html {
-        font-size: 32px;
-    }
-
     header > div > p, section p,  section a {
         font-size: 1.3rem;
     }
