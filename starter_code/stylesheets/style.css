@@ -8,3 +8,923 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+* {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 16px;
+    width: 100vw;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* NAV */
+
+nav {    
+    height: 4rem;
+    width: 90%;
+    position: fixed;
+    z-index: 1;
+    background-color: #540B51;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+nav ul {
+    display: none;
+}
+
+#buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav button {
+    background-color:transparent;
+    border: none;
+}
+
+#logo {
+    height: 1.5rem;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    background-color: #540B51;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    padding-top: 4rem;
+
+}
+
+h1 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+#intro {
+    font-weight: bold;
+    color: #ECB12F;
+}
+
+#sign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0;
+}
+
+#sign button {
+    width: 95%;
+    height: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #540B51;
+    border: none;
+    border-radius: 5px;
+}
+
+#sign button:last-child {
+    background-color: #4285F4;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+}
+
+#google {
+    position: absolute;
+    height: 2.3rem;
+    background-color: #FFF;
+}
+
+#gSign {
+    width: 100%;
+}
+
+#screenshot {
+    background-image: url(../images/hero-product-ui.png);
+    background-size: 155%;
+    background-position-x: -1rem;
+    background-repeat: no-repeat;
+    height: 18rem;
+    width: 100%;
+}
+
+/* MAIN */
+
+main {
+    width: 101vw;
+    background-color: #FFF;
+}
+
+.info {
+    padding: 3rem 1rem;
+}
+
+.info h2 {
+    font-weight: bold;
+}
+
+.info p {
+    padding: 1rem 0;
+}
+
+.info a {
+    text-decoration: none;
+}
+
+.info a:after {
+    position: absolute;
+    padding-left: 0.3rem;
+    content: "\2192";
+}
+
+section {
+    width: 100vw;
+}
+
+.background {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 22rem;
+}
+
+section:nth-child(-n+4) {
+    background-color: #F3EAE2;
+}
+
+/* SECTION 1 */
+
+section:first-child p {
+    font-size: 0.9rem;
+    padding-top: 2rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+section:first-child div{
+    height: 5.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content:space-between;
+    padding: 2rem 1rem;
+}
+
+section:first-child img {
+    height: 2rem;
+}
+
+/* SECTION 2 */
+
+section:nth-child(2) div:first-child {
+    background-image: url("../images/connectedness-mobile.png");
+}
+
+/* SECTION 3 */
+
+section:nth-child(3) {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+section:nth-child(3) div:nth-child(2) {
+    background-image: url("../images/flexibility-mobile.png");
+    background-position: right;
+}
+
+
+/* SECTION 4 */
+section:nth-child(4) div:first-child {
+    background-image: url("../images/speed-mobile.png");
+}
+
+/* SECTIONS 5 */
+
+#survey {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#survey h2 {
+    padding: 1rem 2rem;
+}
+
+#survey > p {
+    padding: 1rem;
+    font-weight: normal;
+}
+
+#survey > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#survey > div button {
+    width: 95vw;
+    text-transform: uppercase;
+    height: 3rem;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+#survey > div button:first-child {
+    background-color: #540B51;
+    color: #FFF;
+    border: none;
+}
+
+#survey > div button:last-child {
+    background-color: #FFF;
+    color: #540B51;
+    border: 2px solid #540B51;
+}
+
+.figure {
+    font-size: 2rem;
+    color:#540B51;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+#survey li p {
+    padding: 0 6rem
+}
+
+#lorem {
+    font-size: 0.5rem;
+    color: grey;
+}
+
+/* LAST SECTION */
+
+#welcome {
+    background-color: #540B51;
+    color: #FFF;
+    padding: 2rem 0rem 1rem;
+    text-align: center;
+}
+
+#welcome h2 {
+    padding: 1rem;
+}
+#welcome div{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#welcome button {
+    width: 95vw;
+    text-transform: uppercase;
+    height: 3rem;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+#welcome button:nth-child(2) {
+    background-color: #540B51;
+    color: #FFF;
+    border: 2px solid #FFF;
+}
+
+#welcome button:first-child {
+    background-color: #FFF;
+    color: #540B51;
+    border: none;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+
+footer img {
+    height: 4rem;
+    padding-bottom: 2rem;
+}
+
+#siteTree {
+    width: 100%;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#siteTree ul {
+    width: 21%;
+}
+
+#siteTree li {
+    padding-bottom: 1.5rem;
+    height: 1.5rem;
+}
+
+#siteTree ul li:first-child {
+    font-weight: bold;
+}
+
+hr {
+    margin: auto;
+    color: #bCbcbc;
+    width: 100%;
+}
+
+#legal {
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#legal li:nth-child(6) {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.3rem;
+}
+
+#region {
+    height: 1rem;
+    width: 1rem;
+    background-image: url("../images/icon-region.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#legal li:last-child {
+    color: #4285F4;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.3rem;
+}
+
+#download {
+    height: 1rem;
+    width: 1rem;
+    background-image: url("../images/icon-download.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#socials {
+    display: flex;
+    gap: 2rem;
+}
+
+small {
+    font-size: x-small;
+    color: #454245;
+}
+
+/* SMALL SCREEN */
+
+@media (min-width: 769px) and (max-width:1023px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 4rem;
+    }
+
+    header div:first-child {
+        background-image: url("../images/background-singup.png");
+        background-size: 200%;
+        background-repeat: no-repeat;
+        width: 60%;
+    }
+
+    h1 {
+        font-size: 3.5em;
+    }
+
+    h1, h1 + p {
+        text-align: left;
+        padding: 1rem 4rem 1rem 1rem;
+    }
+
+    #screenshot {
+        width: 40%;
+        background-size: cover;
+        background-position-x: 0;
+    }
+
+    section:nth-child(2) div:first-child {
+        background-image: url("../images/connectedness.png");
+    }
+
+    section:nth-child(3) div:nth-child(2) {
+        background-image: url("../images/flexibility.png");
+    }
+
+    section:nth-child(4) div:first-child {
+        background-image: url("../images/speed.png");    
+    }
+
+    .info {
+        width: 70%;
+        margin: auto;
+    }
+
+    #survey > div {
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    #survey > div button:first-child {
+        width: 40vw;
+    }
+
+    #survey > div button:last-child {
+        width: 30vw;
+    }
+
+    #survey ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #survey li {
+        text-align: left;
+        width: 20vw;
+    }
+
+    #survey li p {
+        padding: unset;
+    }
+
+    #welcome div {
+        flex-direction: column;
+    }
+
+    #welcome button {
+        width: 85vw;
+    }
+
+    #siteTree {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #siteTree ul {
+        width: 13%;
+    }
+
+    #legal {
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    #socials {
+        justify-content: flex-start;
+        gap: 3rem;
+    }
+}
+
+/* MEDIUM SCREEN */
+
+@media (min-width: 1024px) and (max-width:1439px) {
+    html {
+        font-size: 32px;
+    }
+    
+    header > div > p, section p,  section a {
+        font-size: 1.5rem;
+    }
+
+    #sign button, #survey button, nav, #welcome button, footer li{
+        font-size: 1.1rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+    
+    #menu{
+        display: none;
+    }
+    
+    nav {
+        width: 100%;
+        justify-content: space-around;
+        padding: 0;       
+    }
+
+    nav div:first-child {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
+    }
+    
+    nav div:first-child ul {
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+    }
+    
+    nav a {
+        color: #FFF;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    #buttons ul {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #try {
+        background-color: #FFF;
+        border-radius: 3px;
+        padding: 0.4rem 0.5rem;
+    }
+    #try a {
+        color: #540B51;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+    }
+
+    header {
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 4rem;
+    }
+
+    header div:first-child {
+        background-image: url("../images/background-singup.png");
+        background-size: 200%;
+        background-repeat: no-repeat;
+        width: 50%;
+        padding-left: 2rem;
+    }
+
+    h1 {
+        font-size: 4.5em;
+    }
+
+    h1, h1 + p {
+        text-align: left;
+        padding: 1rem 4rem 1rem 1rem;
+    }
+
+    #screenshot {
+        width: 55%;
+        height: 27rem;
+        background-size: cover;
+        background-position-x: 0;
+    }
+
+    section:first-child p {
+        font-size: 1.5rem;
+    }
+
+    .demo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 3rem;
+    }
+
+    section:nth-child(3) {
+        flex-direction: row;
+    }
+
+    .info {
+        width: 40%;
+        padding: 1rem 4rem;
+    }
+
+    .info h2, .info p, .info a {
+        width: 80%;
+    }
+
+    .background {
+        width: 45%;
+        height: 18rem;
+    }
+
+    section:nth-child(2) div:first-child {
+        background-image: url("../images/connectedness.png");
+    }
+
+    section:nth-child(3) div:nth-child(2) {
+        background-image: url("../images/flexibility.png");
+    }
+
+    section:nth-child(4) div:first-child {
+        background-image: url("../images/speed.png");    
+    }
+
+    #survey > div {
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
+        padding-bottom: 2rem;
+    }
+
+    #survey > div button:first-child {
+        width: 40vw;
+    }
+
+    #survey > div button:last-child {
+        width: 30vw;
+    }
+
+    #survey ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #survey li {
+        text-align: left;
+        width: 20vw;
+    }
+
+    #survey li p {
+        padding: unset;
+    }
+
+    #lorem {
+        font-size: small;
+    }
+
+    #welcome div {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #welcome button {
+        width: 15%;
+        height: 3rem;
+    }
+
+    #siteTree {
+        justify-content: space-between;
+    }
+
+    #siteTree ul {
+        width: 13vw;
+    }
+
+    #legal {
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 0.8rem;
+    }
+
+    #socials {
+        justify-content: flex-start;
+        gap: 3rem;
+    }
+
+    small {
+        font-size: small;
+    }
+}
+
+/* LARGE SCREEN */
+
+@media (min-width: 1440px) {
+    html {
+        font-size: 32px;
+    }
+
+    header > div > p, section p,  section a {
+        font-size: 1.3rem;
+    }
+
+    #sign button, #survey button, nav, #welcome button, footer li{
+        font-size: 1.1rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    nav {
+        width: 95%;
+        justify-content: space-between;
+        padding: 0 2.5%;       
+    }
+
+    #menu{
+        display: none;
+    }
+    
+    nav div:first-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+    }
+    
+    nav div:first-child ul {
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+    }
+    
+    nav a {
+        color: #FFF;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    #buttons ul {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #try {
+        background-color: #FFF;
+        border-radius: 3px;
+        padding: 0.4rem 0.5rem;
+    }
+    #try a {
+        color: #540B51;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding-bottom: 5rem;
+        height: 30rem;
+    }
+
+    header div:first-child {
+        width: 50%;
+        padding-left: 4rem;
+    }
+
+    h1 {
+        font-size: 4.5em;
+    }
+
+    h1, h1 + p {
+        text-align: left;
+        padding: 1rem 4rem 1rem 1rem;
+    }
+
+    #sign {
+        flex-direction: row;
+    }
+
+    #screenshot {
+        width: 50%;
+        height: 27rem;
+        background-size: 80%;
+        background-position: left;
+        background-position-x: 0;
+    }
+
+    section:first-child p {
+        font-size: 1.5rem;
+    }
+
+    .demo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 3rem;
+    }
+
+    section:nth-child(3) {
+        flex-direction: row;
+    }
+
+    .info {
+        width: 40%;
+        padding: 1rem 1rem 1rem 4rem;
+    }
+
+    .info h2, .info p, .info a {
+        width: 80%;
+    }
+
+    .background {
+        width: 45%;
+        height: 23rem;
+    }
+
+    section:nth-child(2) div:first-child {
+        background-image: url("../images/connectedness.png");
+    }
+
+    section:nth-child(3) div:nth-child(2) {
+        background-image: url("../images/flexibility.png");
+    }
+
+    section:nth-child(4) div:first-child {
+        background-image: url("../images/speed.png");
+        padding-bottom: 4rem;   
+    }
+
+    #survey > div {
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
+        padding-bottom: 2rem;
+    }
+
+    #survey > div button:first-child {
+        width: 25%;
+    }
+
+    #survey > div button:last-child {
+        width: 20%;
+    }
+
+    .figure {
+        font-size: 3.5rem;
+    }
+
+    #survey ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #survey li {
+        text-align: left;
+        width: 15%;
+    }
+
+    #survey li p {
+        padding: unset;
+    }
+
+    #lorem {
+        font-size: small;
+    }
+
+    #welcome div {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #welcome button {
+        width: 15%;
+        height: 3rem;
+    }
+
+    #siteTree {
+        justify-content: space-between;
+    }
+
+    #siteTree ul {
+        width: 13vw;
+    }
+
+    #legal {
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 0.8rem;
+    }
+
+    #socials {
+        justify-content: flex-start;
+        gap: 3rem;
+    }
+
+    small {
+        font-size: small;
+    }
+}
